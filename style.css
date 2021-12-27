@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+}
+.card {
+    background-color: #fff;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.1);
+}
+.card .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+.card .box .title {
+    text-align: center;
+}
+.card .box .title h3 {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.card .box .title p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+}
+.card .box .plan {
+    background-color: var(--very-pale-blue);
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.card .box .plan-left {
+    display: flex;
+}
+.card .box .plan-left .plan-text{
+    margin-left: 1rem;
+}
+.card .box .plan-left .plan-text h4 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 16px;
+}
+.card .box .plan-left .plan-text p {
+    margin-top: .5rem;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+}
+.card .box .plan-right a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+.card .box .plan-right a:hover {
+    text-decoration: none;
+}
+.card .box .payment {
+    background-color: var(--bright-blue);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px hsla(245, 75%, 52%, 0.3);
+    cursor: pointer;
+    transition: .25s ease;
+}
+.card .box .payment a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+.card .box .payment:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+.card .box .cancle {
+    margin: 2rem 0 1rem 0;
+}
+.card .box .cancle a {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .25s ease;
+}
+.card .box .cancle a:hover {
+    color: var(--dark-blue);
+}
+@media only screen and (max-width: 960px) {
+    .card {
+        width: 375px;
+    }
+}
