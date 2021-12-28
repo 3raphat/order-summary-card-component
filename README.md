@@ -1,4 +1,3 @@
-# order-summary-card-component
-order-summary-card-component
+# Order summary component
 
-https://suspicious-dubinsky-3fb962.netlify.app
+Challenged by Frontend Mentor
